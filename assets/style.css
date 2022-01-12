@@ -1,0 +1,155 @@
+/*
+COLORS
+1. #edc7b7 rgba(237,199,183,1)
+2. #eee2dc rgba(238,226,220,1)
+3. #bab2b5 rgba(186,178,181,1)
+4. #123c69 rgba(18,60,105,1)
+5. #ac3b61 rgba(172,59,97,1)
+*/
+body{
+	background-color:#123c69;
+	color:#fff;
+	overflow:hidden;
+}
+.heading{
+	background-color:#123c69;
+	color:#edc7b7;
+	text-align:center;
+	box-shadow:0px 8px 15px #000;
+	position:fixed;
+	top:0;
+	transition:1s;
+}
+.container{
+	position:absolute;
+	margin-left:10%;
+	top:100px;
+}
+.clock{
+	height:75vh;
+	width:25%;
+	padding:20px;
+	display:flex;
+	overflow:hidden;
+	background-color:rgba(172,59,97,0.5);
+	box-shadow:5px 5px 3px #000,0px 10px 100px #000 inset;
+	border-radius:1px 1px 1px 1px;
+}
+
+.hour,.minute,.second{
+	background-color:rgba(18,60,105,1);
+	width:32%;
+	height:100%;
+	margin-left:2px;
+	display:inline-block;
+	/*border-radius:100% 100% 35px 35px;*/
+	box-shadow:4px 5px 3px #000,0px 5px 15px #000 inset;
+	align-self: flex-end;
+	transition:0.8s;
+}
+
+.col2{
+	display:flex;
+	align-items: center;
+}
+
+.col2 h3{
+	text-shadow: 3px 3px #000;
+	align-items:center;
+}
+
+.addAlarm{
+	width:50px;
+	height:50px;
+	background:rgba(18,60,105,0.5);
+	text-align:center;
+	text-shadow:2px 2px #000;
+	position:relative; 
+	line-height:45px;
+	font-size:40px;
+	box-shadow:4px 5px 3px #000,0px 5px 15px #000 inset;
+	border-radius:50%;
+	cursor:pointer;
+	transform:scale(1.1);
+	display:inline-block;
+	margin-right:5px;
+}
+
+.addAlarm:hover{
+	background:rgba(18,60,105,0.5);
+}
+
+.addAlarm:active{
+	background:rgba(172,59,97,0.5);
+	box-shadow:0px 5px 15px #000 inset;
+	transform:scale(1.0);
+}
+
+.pauseAudio{
+	width:50px;
+	height:50px;
+	background:rgba(172,59,97,1);
+	text-align:center;
+	text-shadow:2px 2px #000;
+	position:relative;
+	line-height:45px;
+	font-size:35px;
+	box-shadow:4px 5px 3px #000,0px 5px 15px #000 inset;
+	border-radius:50%;
+	cursor:pointer;
+	transform:scale(1.1);
+	display:inline-block;
+	margin-right:5px;
+}
+
+.pauseAudio:hover{
+	background:rgba(172,59,97,0.5);
+}
+
+.pauseAudio:active{
+	background:rgba(172,59,97,0.5);
+	box-shadow:0px 5px 15px #000 inset;
+	transform:scale(1.0);
+}
+
+.modal-header-setcolor{
+	background:rgba(18,60,105,1);
+	border-bottom:5px solid rgba(172,59,97,1);
+}
+
+.modal-footer-setcolor{
+	background:rgba(18,60,105,1);
+	border-top:5px solid rgba(172,59,97,1);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.alarms{
+	margin-top:30px;
+}
+
+.alarmcard{
+	margin-top:20px;
+}
+
+.card-body-back{
+	background:rgba(172,59,97,0.1);
+	box-shadow:1px 2px 5px #000; 
+}
+
+.alt{
+	position:fixed;
+	bottom:0;
+	right:0;
+	width:50%;
+	z-index:99;
+	font-size:18px;
+}
